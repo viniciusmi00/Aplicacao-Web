@@ -1,7 +1,7 @@
 Aplicação Web
 
-Aplicação Web e Mobile utilizando Web Service RESTFul, Restify e banco de dados MySQL.
-Middleware: restify-cors-middleware.
+Aplicação Web e Mobile utilizando Web Service RESTFul, Restify e banco de dados MySQL.  
+Middleware: restify-cors-middleware.  
 Restify: Servidor para prover as rotas da aplicação.
 
 1° - Instalar o Node LTS direto do site: https://nodejs.org<br /><br />
