@@ -1,0 +1,93 @@
+/* Copyright © 2018 HiveSys. Todos os Direitos Reservados.
+Author: HiveSys
+Website: HiveSys - http://hivesys.com.br/ */
+
+
+/*
+ * Component: Table
+ * ----------------
+ */
+
+.title {
+    text-align: left;
+}
+
+.mainTitle {
+    font-weight: bolder;
+}
+
+.numbers {
+    text-align: right;
+}
+
+.mainNumbers {
+    font-weight: bolder;
+}
+
+.totalizadores {
+    background-color: #e7e7e7;
+    font-weight: bolder;
+}
+
+.simples-totalizadores {
+    background-color: #e7e7e7;
+}
+
+.marcador1{
+    background-color: #f7f7f7;
+}
+.marcador2{
+    background-color: #efefef;
+}
+
+.marcadorBolder1{
+    background-color: #f7f7f7;
+    font-weight: bolder;
+}
+.marcadorBolder2{
+    background-color: #efefef;
+    font-weight: bolder;
+}
+
+.marcador {
+    background-color: #E6E8FC;
+}
+
+th {
+    background-color: #d7d7d7;
+    font-weight: normal;
+    text-align: center;    
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+h1,h2,h3,h4,h5{
+    overflow: hidden;
+}
+
+.drophs{
+    color: #000!important;
+}
+
+.drophs:hover { 
+    opacity: 0.6; color: #fff; 
+}
+
+.nav-calendario{
+    padding-left: 5px;
+    padding-top: 14px;
+    float: left;
+}
+.nav-user{
+    padding-top: 7px;
+    float: right;
+}
+
+.nav-size-btn{
+    width: 100%;
+}
