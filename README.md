@@ -63,3 +63,9 @@ Terminal
 ```Bash
 npm run dev
 ```
+
+# Testes
+
+Solução utilizaça: AVA - JavaScript Test Runner
+
+[AVA](https://github.com/avajs/ava "Github AVA - JavaScript Test Runner")
