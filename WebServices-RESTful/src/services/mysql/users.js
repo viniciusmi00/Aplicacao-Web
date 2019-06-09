@@ -19,7 +19,7 @@ const users = deps => {
             })
         },
 
-        save: (email, password) => { // Método para salvar um usuário.
+        save: (email, password) => {
 
             return new Promise((resolve, reject) => { // Promise para garantir a consulta. Resolve problema com Assincronidade.
                 const { connection, errorHandler } = deps                
