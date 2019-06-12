@@ -3,18 +3,30 @@ const db = require('../services/mysql')
 
 const routes = (server) => { // Utilização do servidor para criação das rotas.
 
-
   server.post('/autenticacao', async (req, res, next) => { // async para tratar o problema do Assíncrono, retornando corretamente a query SQL do arquivo categories.js
-    try{ 
-      const { email, password} = req.body      
-      
+    
+    try{   
+      const {email, password} = req.params   
       res.send(await db.auth().authenticate(email, password))
       
     } catch (error) { // Executado quando a Promise for rejeitada.
-        res.send(422, error)        
+        res.send(error)        
     }
     next()
   })
+
+
+  // server.post('/autenticacao', async (req, res, next) => { // async para tratar o problema do Assíncrono, retornando corretamente a query SQL do arquivo categories.js
+  //   try{ 
+  //     const { email, password} = req.body      
+      
+  //     res.send(await db.auth().authenticate(email, password))
+      
+  //   } catch (error) { // Executado quando a Promise for rejeitada.
+  //       res.send(422, error)        
+  //   }
+  //   next()
+  // })
 
 
 
