@@ -11,7 +11,7 @@ const users = deps => {
 
                 connection.query('SELECT id, email From users', (error, results) => { // Query de consulta SQL.
                   if (error) { 
-                    errorHandler(error, 'Falha ao listar as usuários', reject) // Passa o error caso exista. E passa o reject. Estão fornecidas pela Promise.
+                    errorHandler(error, 'Falha ao listar os usuários', reject) // Passa o error caso exista. E passa o reject. Estão fornecidas pela Promise.
                     return false // retornar false caso o método seja executado, para não cair no resolve.
                   }
                   resolve( { users: results } )
@@ -57,10 +57,10 @@ const users = deps => {
 
                 connection.query('DELETE FROM users WHERE id = ?;',[id], (error, results) => { // Query de consulta SQL.
                   if (error || !results.affectedRows) { 
-                    errorHandler(error, `Falha ao deletarr a usuário ${id}`, reject) // Passa o error caso exista. E passa o reject. Estão fornecidas pela Promise.
+                    errorHandler(error, `Falha ao deletar o usuário ${id}`, reject) // Passa o error caso exista. E passa o reject. Estão fornecidas pela Promise.
                     return false // retornar false caso o método seja executado, para não cair no resolve.
                   }
-                  resolve( { message: 'usuário removido com sucesso!' } )
+                  resolve( { message: 'Usuário removido com sucesso!' } )
                 })
             })
 

@@ -55,7 +55,7 @@ const categories = deps => {
 
                 connection.query('DELETE FROM categories WHERE id = ?;',[id], (error, results) => { // Query de consulta SQL.
                   if (error || !results.affectedRows) { 
-                    errorHandler(error, `Falha ao deletarr a categoria ${id}`, reject) // Passa o error caso exista. E passa o reject. Estão fornecidas pela Promise.
+                    errorHandler(error, `Falha ao deletar a categoria ${id}`, reject) // Passa o error caso exista. E passa o reject. Estão fornecidas pela Promise.
                     return false // retornar false caso o método seja executado, para não cair no resolve.
                   }
                   resolve( { message: 'Categoria removida com sucesso!' } )
