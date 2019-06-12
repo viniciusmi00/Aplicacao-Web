@@ -13,7 +13,7 @@ server.use(restify.plugins.bodyParser())
 routes(server) // Passa o servidor para as rotas.
 server.use((req, res, next) => {
 
-    //console.log('Está sim passando por aqui! o/')
+    // console.log('Está sim passando por aqui! o/')
     next()
 })
 
