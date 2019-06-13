@@ -15,21 +15,6 @@ const routes = (server) => { // Utilização do servidor para criação das rota
     next()
   })
 
-
-  // server.post('/autenticacao', async (req, res, next) => { // async para tratar o problema do Assíncrono, retornando corretamente a query SQL do arquivo categories.js
-  //   try{ 
-  //     const { email, password} = req.body      
-      
-  //     res.send(await db.auth().authenticate(email, password))
-      
-  //   } catch (error) { // Executado quando a Promise for rejeitada.
-  //       res.send(422, error)        
-  //   }
-  //   next()
-  // })
-
-
-
   server.get('/categoria', async (req, res, next) => { // async para tratar o problema do Assíncrono, retornando corretamente a query SQL do arquivo categories.js
     
     try{      
@@ -40,9 +25,6 @@ const routes = (server) => { // Utilização do servidor para criação das rota
     }
     next()
   })
-
-
-
 
   server.post('/categoria', async (req, res, next) => { // async para tratar o problema do Assíncrono, retornando corretamente a query SQL do arquivo categories.js   
     const { name } = req.params
@@ -56,9 +38,6 @@ const routes = (server) => { // Utilização do servidor para criação das rota
     next()
   })
 
-
-
-
   server.put('/categoria', async (req, res, next) => { // async para tratar o problema do Assíncrono, retornando corretamente a query SQL do arquivo categories.js   
     const { id, name } = req.params
 
@@ -70,9 +49,6 @@ const routes = (server) => { // Utilização do servidor para criação das rota
     }
     next()
   })
-
-
-
   
   server.del('/categoria', async (req, res, next) => { // async para tratar o problema do Assíncrono, retornando corretamente a query SQL do arquivo categories.js   
     const { id } = req.params
@@ -85,8 +61,7 @@ const routes = (server) => { // Utilização do servidor para criação das rota
     }
     next()
   })
-
-
+  
 
   
 }// Fim da const de Routes.
