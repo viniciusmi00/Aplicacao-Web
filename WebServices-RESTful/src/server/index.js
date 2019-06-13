@@ -9,11 +9,13 @@ const cors = require('./cors') // Importa o middleware Cors.
 
 const jwtMiddleware = require('./jwtMiddleware')
 
+const exclusions = ['/autenticacao']
+
 server.pre(cors.preflight)
 server.use(cors.actual)
 server.use(restify.plugins.bodyParser())
 routes(server) // Passa o servidor para as rotas.
 
-server.use(jwtMiddleware())
+server.use(jwtMiddleware({ exclusions }))
 
 module.exports = server // Exporta o servidor.
