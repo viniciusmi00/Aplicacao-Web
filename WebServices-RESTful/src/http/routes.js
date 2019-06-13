@@ -20,8 +20,6 @@ const routes = (server) => { // Utilização do servidor para criação das rota
     next()
   })
 
-
-
   
 }// Fim da const de Routes.
 
