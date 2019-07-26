@@ -25,8 +25,10 @@
     "sha1": "^1.1.1"
   },
   "dependencies": {
+    "esm": "^3.2.25",
     "js-yaml": "^3.13.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
+    "lodash.merge": "^4.6.2",
     "make-promises-safe": "^4.0.0",
     "n": "^2.1.12",
     "nodemon": "^1.18.4"

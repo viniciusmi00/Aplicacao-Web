@@ -6,7 +6,7 @@ const connection = mysqlServer.createConnection({ // Conexão para conectar o My
     host: process.env.MYSQL_HOST, // Local a ser conectado.
     user: process.env.MYSQL_USER, // Usuário para login da conexão.
     password: process.env.MYSQL_PASSWORD, // Senha para login da conexão.
-    database: process.env.MYSQL_TEST_DATABASE, // Database que será conextado.
+    database: process.env.MYSQL_TEST_DATABASE, // Database que será conectado.
     port: process.env.MYSQL_PORT
   })
   
